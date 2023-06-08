@@ -1,0 +1,1 @@
+components.navbars.navs.guest<?php /**PATH F:\XAMPP\htdocs\website\storage\framework\views/d95269946a407a3e00f95f813b320dd3.blade.php ENDPATH**/ ?>

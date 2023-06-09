@@ -7,9 +7,6 @@ declare(strict_types=1);
  *
  * (c) Colin O'Dell <colinodell@gmail.com>
  *
- * Original code based on the CommonMark JS reference parser (https://bitly.com/commonmark-js)
- *  - (c) John MacFarlane
- *
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
@@ -18,14 +15,15 @@ namespace League\CommonMark;
 
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\CommonMark\CommonMarkCoreExtension;
+use League\CommonMark\Extension\GithubFlavoredMarkdownExtension;
 
 /**
- * Converts CommonMark-compatible Markdown to HTML.
+ * Converts GitHub Flavored Markdown to HTML.
  */
-final class CommonMarkConverter extends MarkdownConverter
+final class GithubFlavoredMarkdownConverter extends MarkdownConverter
 {
     /**
-     * Create a new Markdown converter pre-configured for CommonMark
+     * Create a new Markdown converter pre-configured for GFM
      *
      * @param array<string, mixed> $config
      */
@@ -33,6 +31,7 @@ final class CommonMarkConverter extends MarkdownConverter
     {
         $environment = new Environment($config);
         $environment->addExtension(new CommonMarkCoreExtension());
+        $environment->addExtension(new GithubFlavoredMarkdownExtension());
 
         parent::__construct($environment);
     }

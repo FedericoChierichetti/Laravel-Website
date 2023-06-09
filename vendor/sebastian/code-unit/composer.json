@@ -1,8 +1,8 @@
 {
-    "name": "sebastian/cli-parser",
-    "description": "Library for parsing CLI options",
+    "name": "sebastian/code-unit",
+    "description": "Collection of value objects that represent the PHP code units",
     "type": "library",
-    "homepage": "https://github.com/sebastianbergmann/cli-parser",
+    "homepage": "https://github.com/sebastianbergmann/code-unit",
     "license": "BSD-3-Clause",
     "authors": [
         {
@@ -12,7 +12,7 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/sebastianbergmann/cli-parser/issues"
+        "issues": "https://github.com/sebastianbergmann/code-unit/issues"
     },
     "prefer-stable": true,
     "require": {
@@ -31,6 +31,15 @@
     "autoload": {
         "classmap": [
             "src/"
+        ]
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/_fixture"
+        ],
+        "files": [
+            "tests/_fixture/file_with_multiple_code_units.php",
+            "tests/_fixture/function.php"
         ]
     },
     "extra": {

@@ -11,11 +11,15 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace League\CommonMark\Extension;
+namespace League\CommonMark\Extension\Embed;
 
-use League\Config\ConfigurationBuilderInterface;
-
-interface ConfigurableExtensionInterface extends ExtensionInterface
+/**
+ * Interface for a service which updates the embed code(s) for the given array of embeds
+ */
+interface EmbedAdapterInterface
 {
-    public function configureSchema(ConfigurationBuilderInterface $builder): void;
+    /**
+     * @param Embed[] $embeds
+     */
+    public function updateEmbeds(array $embeds): void;
 }

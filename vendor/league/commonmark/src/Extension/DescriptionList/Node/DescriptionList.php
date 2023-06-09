@@ -11,11 +11,10 @@ declare(strict_types=1);
  * file that was distributed with this source code.
  */
 
-namespace League\CommonMark\Extension;
+namespace League\CommonMark\Extension\DescriptionList\Node;
 
-use League\Config\ConfigurationBuilderInterface;
+use League\CommonMark\Node\Block\AbstractBlock;
 
-interface ConfigurableExtensionInterface extends ExtensionInterface
+class DescriptionList extends AbstractBlock
 {
-    public function configureSchema(ConfigurationBuilderInterface $builder): void;
 }

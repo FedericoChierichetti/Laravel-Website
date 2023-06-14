@@ -26,7 +26,7 @@
                             <td>{{ $item->phone }}</td>
 
                             <td>
-                                <a href="{{ url('view-user/'.$item->id) }}" class="btn btn-primary btn-sm">View</button>
+                                <a href="{{ url('view-user/'.$item->id) }}" class="btn btn-primary btn-sm">Vizualizare</button>
                             </td>
                         </tr>
                     @endforeach

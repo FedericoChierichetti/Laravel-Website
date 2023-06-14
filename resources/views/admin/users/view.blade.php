@@ -6,7 +6,7 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    <h4>User Details
+                    <h4>Detalii Utilizator
                         <a href="{{ url('users') }}" class="btn btn-primary btn-sm float-end">Back</a>
                     </h4>
                     <hr>
@@ -14,15 +14,15 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col-md-4 mt-3">
-                            <label for="">Role</label>
+                            <label for="">Rol</label>
                             <div class="p-2 border">{{ $users->role_as == '0'? 'User':'Admin' }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">First Name</label>
+                            <label for="">Prenume</label>
                             <div class="p-2 border">{{ $users->name }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">Last Name</label>
+                            <label for="">Nume de familie</label>
                             <div class="p-2 border">{{ $users->lname }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
@@ -30,31 +30,31 @@
                             <div class="p-2 border">{{ $users->email }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">Phone</label>
+                            <label for="">Numar telefon</label>
                             <div class="p-2 border">{{ $users->phone }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">Address 1</label>
+                            <label for="">Adresa 1</label>
                             <div class="p-2 border">{{ $users->address1 }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">Address 2</label>
+                            <label for="">Adresa 2</label>
                             <div class="p-2 border">{{ $users->address2 }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">City</label>
+                            <label for="">Localitate</label>
                             <div class="p-2 border">{{ $users->city }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">State</label>
+                            <label for="">Judet</label>
                             <div class="p-2 border">{{ $users->state }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">Country</label>
+                            <label for="">Tara</label>
                             <div class="p-2 border">{{ $users->country }}</div>
                         </div>
                         <div class="col-md-4 mt-3">
-                            <label for="">Zip Code</label>
+                            <label for="">Cod Postal</label>
                             <div class="p-2 border">{{ $users->pincode }}</div>
                         </div>
                     </div>

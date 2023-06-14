@@ -43,13 +43,13 @@
         <li class="nav-item {{ Request::is('orders') ? 'active':'' }}">
           <a class="nav-link" href="{{ url('orders') }}">
             <i class="material-icons">content_paste</i>
-            <p>Orders</p>
+            <p>Comenzi</p>
           </a>
         </li>
         <li class="nav-item {{ Request::is('users') ? 'active':'' }}">
           <a class="nav-link" href="users">
             <i class="material-icons">person</i>
-            <p>Users</p>
+            <p>Utilizatori</p>
           </a>
         </li>
       </ul>

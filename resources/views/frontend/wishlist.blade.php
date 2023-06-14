@@ -55,7 +55,7 @@
                     </div>
                 @endforeach
             @else
-                <h4>Cosul tau de cumparaturi este gol.</h4>
+                <h4>Wishlist-ul tau este gol.</h4>
             @endif
         </div>
     </div>

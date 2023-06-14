@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-    My Cart
+    Cosul meu
 @endsection
 
 @section('content')

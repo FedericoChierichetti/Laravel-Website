@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-    My Wishlist
+    Wishlist-ul meu
 @endsection
 
 @section('content')

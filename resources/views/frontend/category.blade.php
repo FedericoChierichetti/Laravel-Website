@@ -1,7 +1,7 @@
 @extends('layouts.front')
 
 @section('title')
-    Category
+    Categorii Produse
 @endsection
 
 @section('content')

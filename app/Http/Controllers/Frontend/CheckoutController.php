@@ -30,6 +30,35 @@ class CheckoutController extends Controller
 
     public function placeorder(Request $request)
     {
+        $validatedData = $request->validate([
+            'fname' => 'required',
+            'lname' => 'required',
+            'email' => 'required|email',
+            'phone' => 'required',
+            'address1' => 'required',
+            'address2' => 'required',
+            'city' => 'required',
+            'state' => 'required',
+            'country' => 'required',
+            'pincode' => 'required',
+            'payment_mode' => 'required',
+        ], [
+            'required' => 'Câmpul :attribute este obligatoriu.',
+            'email' => 'Câmpul :attribute trebuie să conțină o adresă de e-mail validă.',
+        ], [
+            'fname' => 'Prenume',
+            'lname' => 'Nume de familie',
+            'email' => 'E-mail',
+            'phone' => 'Număr de telefon',
+            'address1' => 'Adresă 1',
+            'address2' => 'Adresă 2',
+            'city' => 'Oraș',
+            'state' => 'Județ',
+            'country' => 'Țară',
+            'pincode' => 'Cod poștal',
+            'payment_mode' => 'Mod de plată',
+        ]);
+        
         $order = new Order();
         $order->user_id = Auth::id();
         $order->fname = $request-> input('fname');

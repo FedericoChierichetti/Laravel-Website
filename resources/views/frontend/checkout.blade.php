@@ -6,6 +6,17 @@
 
 @section('content')
     <div class="container mt-3">
+        @if ($errors->any())
+            <div class="alert alert-danger">
+                Toate câmpurile sunt obligatorii.
+                <ul>
+                    @foreach ($errors->all() as $error)
+                        <li>{{ $error }}</li>
+                    @endforeach
+                </ul>
+            </div>
+        @endif
+        
         <form action="{{ url('place-order') }}" method="POST">
         {{ csrf_field() }}
             <div class="row">

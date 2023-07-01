@@ -28,52 +28,52 @@
                         <div class="row checkout-form">
                             <div class="col-md-6">
                                 <label for="">Prenume</label>
-                                <input type="text" class="form-control firstname" value="{{ Auth::user()->name }}" name="fname" placeholder="Enter First Name">
+                                <input type="text" class="form-control firstname" value="{{ Auth::user()->name }}" name="fname" placeholder="Introduceți prenumele">
                                 <span id="fname_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6">
                                 <label for="">Nume de familie</label>
-                                <input type="text" class="form-control lastname" value="{{ Auth::user()->lname }}" name="lname" placeholder="Enter Last Name">
+                                <input type="text" class="form-control lastname" value="{{ Auth::user()->lname }}" name="lname" placeholder="Introduceți numele de familie">
                                 <span id="lname_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Email</label>
-                                <input type="text" class="form-control email" value="{{ Auth::user()->email }}" name="email" placeholder="Enter Email">
+                                <input type="text" class="form-control email" value="{{ Auth::user()->email }}" name="email" placeholder="Introduceți email">
                                 <span id="email_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Numar de Telefon</label>
-                                <input type="text" class="form-control phone" value="{{ Auth::user()->phone }}" name="phone" placeholder="Enter Phone Number">
+                                <input type="text" class="form-control phone" value="{{ Auth::user()->phone }}" name="phone" placeholder="Introduceți numărul de telefon">
                                 <span id="phone_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Adresa 1</label>
-                                <input type="text" class="form-control address1" value="{{ Auth::user()->address1 }}" name="address1" placeholder="Enter Address 1">
+                                <input type="text" class="form-control address1" value="{{ Auth::user()->address1 }}" name="address1" placeholder="Introduceți adresa 1">
                                 <span id="address1_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Adresa 2</label>
-                                <input type="text" class="form-control address2" value="{{ Auth::user()->address2 }}" name="address2" placeholder="Enter Address 2">
+                                <input type="text" class="form-control address2" value="{{ Auth::user()->address2 }}" name="address2" placeholder="Introduceți adresa 2">
                                 <span id="address2_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Localitate</label>
-                                <input type="text" class="form-control city" value="{{ Auth::user()->city }}" name="city" placeholder="Enter City">
+                                <input type="text" class="form-control city" value="{{ Auth::user()->city }}" name="city" placeholder="Introduceți localitatea">
                                 <span id="city_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Judet</label>
-                                <input type="text" class="form-control state" value="{{ Auth::user()->state }}" name="state" placeholder="Enter State">
+                                <input type="text" class="form-control state" value="{{ Auth::user()->state }}" name="state" placeholder="Introduceți județul">
                                 <span id="state_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Tara</label>
-                                <input type="text" class="form-control country" value="{{ Auth::user()->country }}" name="country" placeholder="Enter Country">
+                                <input type="text" class="form-control country" value="{{ Auth::user()->country }}" name="country" placeholder="Introduceți țara">
                                 <span id="country_error" class="text-danger"></span>
                             </div>
                             <div class="col-md-6 mt-3">
                                 <label for="">Cod Postal</label>
-                                <input type="text" class="form-control pincode" value="{{ Auth::user()->pincode }}" name="pincode" placeholder="Enter Pin Code">
+                                <input type="text" class="form-control pincode" value="{{ Auth::user()->pincode }}" name="pincode" placeholder="Introduceți codul postal">
                                 <span id="pincode_error" class="text-danger"></span>
                             </div>
                         </div>
